@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/page_query
+    username: root
+    password: 123
+
+springdoc:
+  api-docs:
+    enabled: true # 是否启用接口文档
+
+logging:
+  level:
+    com.romaneekang: debug
+  pattern:
+    dateformat: HH:mm:ss
+mybatis-plus:
+  type-aliases-package: com.romaneekang.entity
+  global-config:
+    db-config:
+      id-type: auto # 全局id类型为自增长
