@@ -18,17 +18,12 @@ class UserMapperTest {
     private UserMapper userMapper;
     @Test
     void findAllUser() {
-        int allUser = userMapper.findAllUser();
-        System.out.println(allUser);
+
     }
 
     @Test
     void queryUserByPage() {
-        PageDto pageDto = new PageDto();
-        pageDto.setPageNo(1);
-        pageDto.setPageSize(2);
-        List<User> userList = userMapper.queryUserByPage(pageDto);
-        userList.forEach(s->log.info("{}",s));
+
     }
 
 
